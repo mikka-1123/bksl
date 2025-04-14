@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useToast } from '@/hooks/use-toast';
-import { useFormContext } from '@/context/FormContext';
+import { apiRequest } from '@/lib/queryClient';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters long' }),
@@ -19,7 +19,6 @@ type ContactFormData = z.infer<typeof contactFormSchema>;
 const ContactUs = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  const { submitContactForm } = useFormContext();
   
   const {
     register,
@@ -39,7 +38,7 @@ const ContactUs = () => {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     try {
-      await submitContactForm(data);
+      await apiRequest('POST', '/api/contact', data);
       toast({
         title: "Message Sent!",
         description: "We'll get back to you as soon as possible.",
