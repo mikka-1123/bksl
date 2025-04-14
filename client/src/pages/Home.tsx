@@ -13,6 +13,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import ClientLogos from "@/components/sections/ClientLogos";
 import GoldDirection from "@/components/sections/GoldDirection";
 import ContactUs from "@/components/sections/ContactUs";
+import ShipShowcase from "@/components/sections/ShipShowcase";
 
 export default function Home() {
   useEffect(() => {
@@ -52,6 +53,7 @@ export default function Home() {
         <Hero />
         <WhoWeAre />
         <WhyChooseUs />
+        <ShipShowcase />
         <AboutUs />
         <OurVision />
         <OurLegendary />
