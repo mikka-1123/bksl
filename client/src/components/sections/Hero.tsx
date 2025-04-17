@@ -145,11 +145,11 @@ const Hero = () => {
             {/* Main image with bow-shaped mask and neumorphic shadow */}
             <div className="relative z-10 overflow-hidden rounded-[24px_24px_60px_24px] shadow-[10px_10px_30px_rgba(0,0,0,0.1),-10px_-10px_30px_rgba(255,255,255,0.8)]">
               <img 
-                src="https://images.unsplash.com/photo-1616832880334-b1004d9808da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                alt="Cargo Ship with Containers" 
+                src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=85" 
+                alt="Aerial View of Container Ship in Deep Blue Ocean" 
                 className="w-full h-auto transform hover:scale-105 transition-transform duration-1000"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#0f2549]/40 to-transparent mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#0f2549]/30 via-[#0ea5e9]/20 to-transparent mix-blend-overlay"></div>
               
               {/* Blinking tracking points */}
               <motion.div 
