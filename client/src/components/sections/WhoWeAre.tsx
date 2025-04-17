@@ -100,7 +100,7 @@ const WhoWeAre = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <p className="text-lg text-gray-600 leading-relaxed">
-            OceanWay Logistics is a pioneer in global shipping and logistics, providing comprehensive solutions tailored to your business needs. With a focus on innovation and customer satisfaction, we transform complex supply chains into competitive advantages.
+            Baal Krishna Shipping & Logistics is a pioneer in global shipping and logistics, providing comprehensive solutions tailored to your business needs. With a focus on innovation and customer satisfaction, we transform complex supply chains into competitive advantages.
           </p>
         </motion.div>
         

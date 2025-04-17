@@ -133,7 +133,7 @@ const OurLegendary = () => {
           >
             <h3 className="text-2xl font-bold text-[#0f2549] mb-4">Michael J. Wilson <span className="text-[#f59e0b]">CEO</span></h3>
             <p className="text-gray-600 mb-6">
-              Continuing his father's legacy while driving OceanWay into the digital age, Michael has implemented cutting-edge technologies and sustainable practices that set new industry standards.
+              Continuing his father's legacy while driving Baal Krishna Shipping & Logistics into the digital age, Michael has implemented cutting-edge technologies and sustainable practices that set new industry standards.
             </p>
             
             <ul className="space-y-4 mt-8">

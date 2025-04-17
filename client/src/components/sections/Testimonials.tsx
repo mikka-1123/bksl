@@ -7,19 +7,19 @@ const testimonials = [
     name: "Alexandra Chen",
     role: "Global Sourcing Director, TechGlobal Inc.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=128&h=128&q=80",
-    text: "OceanWay transformed our supply chain with their innovative tracking technology and reliable service. We reduced transit times by 28% and improved customer satisfaction significantly."
+    text: "Baal Krishna Shipping & Logistics transformed our supply chain with their innovative tracking technology and reliable service. We reduced transit times by 28% and improved customer satisfaction significantly."
   },
   {
     name: "Robert Martinez",
     role: "Supply Chain Manager, Retail Solutions Corp",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=128&h=128&q=80",
-    text: "The customer service at OceanWay is unmatched. When we faced critical delays due to unforeseen weather conditions, their team worked around the clock to find alternative routes and saved our product launch."
+    text: "The customer service at Baal Krishna Shipping & Logistics is unmatched. When we faced critical delays due to unforeseen weather conditions, their team worked around the clock to find alternative routes and saved our product launch."
   },
   {
     name: "Sarah Johnson",
     role: "COO, GreenEarth Products",
     image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=128&h=128&q=80",
-    text: "As a sustainable products company, OceanWay's carbon-neutral shipping options aligned perfectly with our values. Their commitment to environmental responsibility and operational excellence makes them our partner of choice."
+    text: "As a sustainable products company, Baal Krishna Shipping & Logistics's carbon-neutral shipping options aligned perfectly with our values. Their commitment to environmental responsibility and operational excellence makes them our partner of choice."
   }
 ];
 

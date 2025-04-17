@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0f2549] text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
@@ -43,17 +43,6 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-bold mb-6">Our Services</h4>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Ocean Freight</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Air Freight</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Road Transport</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Warehousing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Supply Chain Solutions</a></li>
-            </ul>
-          </div>
-          
-          <div>
             <h4 className="text-lg font-bold mb-6">Newsletter</h4>
             <p className="text-gray-300 mb-4">Subscribe for industry updates and exclusive offers.</p>
             
@@ -78,7 +67,7 @@ const Footer = () => {
         
         <div className="pt-8 border-t border-white/10 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} OceanWay Logistics. All rights reserved. | 
+            &copy; {new Date().getFullYear()} Baal Krishna Shipping & Logistics. All rights reserved. | 
             <a href="#" className="hover:text-white"> Privacy Policy</a> | 
             <a href="#" className="hover:text-white"> Terms of Service</a>
           </p>

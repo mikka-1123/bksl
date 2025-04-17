@@ -171,7 +171,7 @@ const ContactUs = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-[#0f2549]">Email</h4>
-                    <p className="text-gray-600">contact@oceanway-logistics.com</p>
+                    <p className="text-gray-600">contact@bklogiship.com</p>
                   </div>
                 </div>
                 
