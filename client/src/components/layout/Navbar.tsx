@@ -1,10 +1,27 @@
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logoImage from "../../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navRef = useRef(null);
+  const { scrollY } = useScroll();
+  
+  // Animation values based on scroll position
+  // Different values for mobile vs desktop
+  const isMobile = window.innerWidth < 768;
+  const logoSizeValues = isMobile 
+    ? useTransform(scrollY, [0, 100], [110, 80]) 
+    : useTransform(scrollY, [0, 100], [160, 100]);
+  
+  const logoPositionValues = isMobile
+    ? useTransform(scrollY, [0, 100], [-15, -8])
+    : useTransform(scrollY, [0, 100], [-30, -12]);
+    
+  const logoOpacity = useTransform(scrollY, [0, 100], [1, 0.95]);
+  const logoScale = useTransform(scrollY, [0, 100], [1, 0.9]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,17 +33,39 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`fixed w-full bg-white/95 backdrop-blur-sm z-50 transition-all duration-300 ${scrolled ? 'py-2 shadow-md' : 'py-3'}`}>
-      <div className="container mx-auto px-4 md:px-6">
+    <header 
+      ref={navRef}
+      className={`fixed w-full bg-white/95 backdrop-blur-sm z-50 transition-all duration-300 ${scrolled ? 'py-3 shadow-md' : 'py-6'}`}
+    >
+      <div className="container mx-auto px-4 md:px-6 relative">
+        {/* Logo container - positioned absolutely to go outside navbar */}
+        <motion.div 
+          className="absolute left-4 md:left-6 top-0 z-10"
+          style={{ 
+            width: logoSizeValues,
+            top: logoPositionValues,
+            opacity: logoOpacity,
+            scale: logoScale,
+            filter: scrolled 
+              ? 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))' 
+              : 'drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15))'
+          }}
+          initial={{ y: -50, opacity: 0, scale: 0.8 }}
+          animate={{ y: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, type: "spring", stiffness: 100 }}
+        >
+          <img 
+            src={logoImage} 
+            alt="BAAL KRISHNA SHIPPING & LOGISTICS" 
+            className="w-full h-auto object-contain"
+          />
+        </motion.div>
+        
         <div className="flex items-center justify-between">
-          <a href="#" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center">
-              <span className="text-white font-bold text-xl">OW</span>
-            </div>
-            <span className="text-[#0f2549] font-bold text-xl">OceanWay</span>
-          </a>
+          {/* Spacer for the logo area */}
+          <div className="w-24 md:w-40 h-10 invisible"></div>
           
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 pl-2">
             <a href="#who-we-are" className="text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Who We Are</a>
             <a href="#why-choose-us" className="text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Why Choose Us</a>
             <a href="#timeline" className="text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Timeline</a>
