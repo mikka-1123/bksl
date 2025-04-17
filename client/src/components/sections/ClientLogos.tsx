@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useRef, useEffect } from 'react';
 
 const clientLogos = [
   "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
@@ -23,15 +24,20 @@ const ClientLogos = () => {
           Trusted by industry leaders worldwide
         </motion.h3>
         
-        <div className="relative">
+        <div className="relative overflow-hidden">
           <motion.div 
-            className="flex space-x-16 overflow-hidden"
+            className="flex items-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="flex space-x-16 animate-marquee">
+            <div 
+              className="flex space-x-16 whitespace-nowrap animate-marquee"
+              style={{
+                willChange: 'transform'
+              }}
+            >
               {clientLogos.map((logo, index) => (
                 <div key={index} className="flex-shrink-0 w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center">
                   <img src={logo} alt={`Client logo ${index + 1}`} className="h-8" />
