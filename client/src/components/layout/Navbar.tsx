@@ -13,11 +13,11 @@ const Navbar = () => {
   
   // Animation values based on scroll position
   const logoSize = useTransform(scrollY, [0, 100], 
-    isMobile ? [110, 80] : [160, 100]
+    isMobile ? [120, 100] : [160, 104]
   );
   
   const logoPosition = useTransform(scrollY, [0, 100], 
-    isMobile ? [-15, -8] : [-30, -12]
+    isMobile ? [-31, -25] : [-30, -27]
   );
     
   const logoOpacity = useTransform(scrollY, [0, 100], [1, 0.95]);
@@ -44,11 +44,11 @@ const Navbar = () => {
           style={{ 
             width: logoSize,
             top: logoPosition,
-            opacity: logoOpacity,
+            // opacity: logoOpacity,
             scale: logoScale,
-            filter: scrolled 
-              ? 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))' 
-              : 'drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15))'
+            // filter: scrolled 
+            //   ? 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))' 
+            //   : 'drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15))'
           }}
           initial={{ y: -50, opacity: 0, scale: 0.8 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
