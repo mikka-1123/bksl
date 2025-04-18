@@ -88,7 +88,7 @@ const OurVision = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1579447767022-66e511bdaf25?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
                 alt="Future of Shipping" 
                 className="rounded-xl shadow-2xl w-full h-auto transform -rotate-2"
               />
@@ -100,7 +100,7 @@ const OurVision = () => {
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" 
+                  src="https://images.unsplash.com/photo-1678983650873-d762acdb046e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
                   alt="Smart Logistics" 
                   className="w-full h-full object-cover rounded"
                 />

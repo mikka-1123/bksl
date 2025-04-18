@@ -25,8 +25,59 @@ const Hero = () => {
       </div>
       
       {/* Background gradient effects */}
+      {/* Background gradients */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-blue-50 to-transparent -z-10"></div>
+      <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-br from-blue-50/50 to-transparent -z-10"></div>
       <div className="absolute top-1/4 left-0 w-full h-1/2 bg-gradient-to-r from-[#0f2549]/5 to-transparent -z-10"></div>
+
+      {/* Left side decorative elements */}
+      <div className="absolute top-32 left-10 w-64 h-64 opacity-5 -z-5 hidden lg:block">
+        <svg viewBox="0 0 200 200" className="w-full h-full">
+          <circle cx="100" cy="100" r="80" stroke="#0f2549" strokeWidth="1" fill="none" />
+          <circle cx="100" cy="100" r="60" stroke="#0ea5e9" strokeWidth="0.5" fill="none" />
+          <path d="M100,20 L100,180 M20,100 L180,100" stroke="#0f2549" strokeWidth="0.5" />
+          <path d="M30,30 L170,170 M30,170 L170,30" stroke="#0f2549" strokeWidth="0.5" strokeDasharray="4,4" />
+        </svg>
+      </div>
+      
+      <motion.div 
+        className="absolute top-48 left-24 w-32 h-32 opacity-5 -z-5 hidden lg:block"
+        animate={{ 
+          rotate: -360,
+        }}
+        transition={{ 
+          duration: 180, 
+          repeat: Infinity, 
+          ease: "linear" 
+        }}
+      >
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <path d="M50,0 A50,50 0 0,1 50,100 A50,50 0 0,1 50,0" 
+                stroke="#0ea5e9" 
+                strokeWidth="1" 
+                fill="none" 
+                strokeDasharray="3,3" />
+          <path d="M0,50 A50,50 0 0,1 100,50 A50,50 0 0,1 0,50" 
+                stroke="#0f2549" 
+                strokeWidth="1" 
+                fill="none" 
+                strokeDasharray="3,3" />
+        </svg>
+      </motion.div>
+
+      {/* Nautical map grid lines */}
+      <div className="absolute top-0 left-0 w-1/3 h-full opacity-5 -z-5 hidden lg:block">
+        <div className="grid grid-cols-6 h-full">
+          {Array(7).fill(null).map((_, i) => (
+            <div key={i} className="border-l border-[#0f2549]/20 h-full" />
+          ))}
+        </div>
+        <div className="grid grid-rows-6 w-full h-full absolute top-0">
+          {Array(7).fill(null).map((_, i) => (
+            <div key={i} className="border-t border-[#0f2549]/20 w-full" />
+          ))}
+        </div>
+      </div>
       
       {/* Animated compass decorative element */}
       <motion.div 
@@ -127,9 +178,9 @@ const Hero = () => {
             
             <div className="mt-10 flex items-center space-x-6">
               <div className="flex -space-x-2">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt="User" className="w-8 h-8 rounded-full border-2 border-white" />
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt="User" className="w-8 h-8 rounded-full border-2 border-white" />
-                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt="User" className="w-8 h-8 rounded-full border-2 border-white" />
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt="Shipping Professional" className="w-8 h-8 rounded-full border-2 border-white" />
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt="Logistics Expert" className="w-8 h-8 rounded-full border-2 border-white" />
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt="Supply Chain Manager" className="w-8 h-8 rounded-full border-2 border-white" />
               </div>
               <span className="text-sm text-gray-600">Trusted by <span className="font-medium text-[#0f2549]">2,000+</span> businesses worldwide</span>
             </div>
@@ -145,9 +196,9 @@ const Hero = () => {
             {/* Main image with bow-shaped mask and neumorphic shadow */}
             <div className="relative z-10 overflow-hidden rounded-[24px_24px_60px_24px] shadow-[10px_10px_30px_rgba(0,0,0,0.1),-10px_-10px_30px_rgba(255,255,255,0.8)]">
               <img 
-                src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=85" 
-                alt="Aerial View of Container Ship in Deep Blue Ocean" 
-                className="w-full h-auto transform hover:scale-105 transition-transform duration-1000"
+                src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=85"
+                alt="Modern Container Ship with Advanced Technology" 
+                className="w-full h-[600px] object-cover transform hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#0f2549]/30 via-[#0ea5e9]/20 to-transparent mix-blend-overlay"></div>
               

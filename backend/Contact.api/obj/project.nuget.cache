@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VaIwjXFlgac=",
+  "dgSpecHash": "nppWxwm7j4U=",
   "success": true,
-  "projectFilePath": "D:\\Project\\2025\\Krishna_Logistics\\PlayGround\\Replit\\V3_with_logo\\Playground\\V4\\ShippingLogistics\\ShippingLogistics\\backend\\Contact.api\\Contact.api.csproj",
+  "projectFilePath": "D:\\Project\\2025\\Krishna_Logistics\\PlayGround\\Replit\\V3_with_logo\\Playground\\V5\\ShippingLogistics\\ShippingLogistics\\backend\\Contact.api\\Contact.api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sonih\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\Sonih\\.nuget\\packages\\mailkit\\4.11.0\\mailkit.4.11.0.nupkg.sha512",
