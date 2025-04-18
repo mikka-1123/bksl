@@ -14,11 +14,11 @@ const Navbar = () => {
   
   // Animation values based on scroll position
   const logoSize = useTransform(scrollY, [0, 100], 
-    isMobile ? [120, 100] : [160, 104]
+    isMobile ? [150, 100] : [200, 145]
   );
   
   const logoPosition = useTransform(scrollY, [0, 100], 
-    isMobile ? [-31, -25] : [-30, -27]
+    isMobile ? [-50, -25] : [-50, -48]
   );
     
   const logoOpacity = useTransform(scrollY, [0, 100], [1, 0.95]);
@@ -64,12 +64,12 @@ const Navbar = () => {
     <>
       <header 
         ref={navRef}
-        className={`fixed w-full bg-white/95 backdrop-blur-sm z-50 transition-all duration-300 ${scrolled ? 'py-3 shadow-md' : 'py-6'}`}
+        className={`fixed w-full bg-white/95 backdrop-blur-sm z-50 transition-all duration-300 ${scrolled ? 'py-5 shadow-md' : 'py-[40px]'}`}
       >
         <div className="container mx-auto px-4 md:px-6 relative">
           {/* Logo container - positioned absolutely to go outside navbar */}
           <motion.div 
-            className="absolute left-4 md:left-6 top-0 z-10"
+            className="absolute left-4 md:left-20 top-0 z-10"
             style={{ 
               width: logoSize,
               top: logoPosition,
@@ -79,11 +79,12 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, type: "spring", stiffness: 100 }}
           >
+            <a href="#">
             <img 
               src={logoImage} 
               alt="BAAL KRISHNA SHIPPING & LOGISTICS" 
               className="w-full h-auto object-contain"
-            />
+            /></a>
           </motion.div>
           
           <div className="flex items-center justify-between">
@@ -91,11 +92,11 @@ const Navbar = () => {
             <div className="w-28 md:w-44 lg:w-48 h-10 invisible">{/* Spacer that matches logo width */}</div>
             
             <nav className="hidden md:flex items-center space-x-8 pl-2">
-              <a href="#who-we-are" className="text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Who We Are</a>
-              <a href="#why-choose-us" className="text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Why Choose Us</a>
-              <a href="#timeline" className="text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Timeline</a>
-              <a href="#testimonials" className="text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Testimonials</a>
-              <a href="#contact" className="text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Contact</a>
+              <a href="#who-we-are" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Who We Are</a>
+              <a href="#why-choose-us" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Why Choose Us</a>
+              <a href="#timeline" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Timeline</a>
+              <a href="#testimonials" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Testimonials</a>
+              <a href="#contact" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Contact</a>
             </nav>
             
             <div className="flex items-center space-x-4">
@@ -126,7 +127,7 @@ const Navbar = () => {
           transition={{ duration: 0.3 }}
         >
           {/* Add space at the top of mobile menu to avoid overlapping with logo */}
-          <div className="h-14 md:h-0"></div>
+          <div className="h-5 md:h-0"></div>
           
           <nav className="flex flex-col space-y-4 mt-4">
             <a 

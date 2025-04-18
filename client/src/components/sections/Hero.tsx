@@ -28,7 +28,7 @@ const Hero = () => {
       {/* Background gradients */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-blue-50 to-transparent -z-10"></div>
       <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-br from-blue-50/50 to-transparent -z-10"></div>
-      <div className="absolute top-1/4 left-0 w-full h-1/2 bg-gradient-to-r from-[#0f2549]/5 to-transparent -z-10"></div>
+      <div className="absolute top-1/2 left-0 w-full h-1/2 bg-gradient-to-r from-[#0f2549]/5 to-transparent -z-10"></div>
 
       {/* Left side decorative elements */}
       <div className="absolute top-32 left-10 w-64 h-64 opacity-5 -z-5 hidden lg:block">
@@ -118,7 +118,7 @@ const Hero = () => {
             </motion.div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0f2549] leading-tight">
-              Efficient and Reliable 
+            Your Global
               <span className="bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] bg-clip-text text-transparent"> Shipping Solutions</span>
             </h1>
             
@@ -198,7 +198,7 @@ const Hero = () => {
               <img 
                 src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=85"
                 alt="Modern Container Ship with Advanced Technology" 
-                className="w-full h-[600px] object-cover transform hover:scale-105 transition-transform duration-1000"
+                className="w-full object-cover transform hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#0f2549]/30 via-[#0ea5e9]/20 to-transparent mix-blend-overlay"></div>
               
@@ -243,9 +243,9 @@ const Hero = () => {
             >
               <div className="flex items-center">
                 <div className="w-3 h-3 rounded-full bg-[#0ea5e9] mr-2"></div>
-                <p className="text-xs font-semibold text-[#0f2549]">LIVE TRACKING</p>
+                <p className="text-xs font-semibold text-[#0f2549]">SHIPPING DETAILS</p>
               </div>
-              <p className="text-sm text-gray-600 mt-1">ETA: 2 days 4 hours</p>
+              <p className="text-sm text-gray-600 mt-1">50 Containers, In Transit (Contact us for updates)</p>
               <div className="w-full bg-gray-200 h-1 rounded-full mt-2">
                 <motion.div 
                   className="h-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] rounded-full"
