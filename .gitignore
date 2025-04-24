@@ -8,3 +8,14 @@ backend/Contact.api/.vs
 backend_email_creds.txt
 cred.txt
 client/.env
+
+# Ignore env and config files inside backend/
+backend/.env
+backend/appsettings.Development.json
+backend/appsettings.Local.json
+backend/appsettings.json
+
+# Ignore build folders inside backend/
+backend/bin/
+backend/obj/
+backend/publish/
