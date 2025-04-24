@@ -10,6 +10,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Add HttpClient for reCAPTCHA verification
+builder.Services.AddHttpClient<RecaptchaService>();
+
+// Register RecaptchaService
+builder.Services.AddScoped<RecaptchaService>();
+
+// Add configuration
+builder.Services.Configure<RecaptchaSettings>(builder.Configuration.GetSection("Recaptcha"));
+
 
 builder.Services.AddCors(options =>
 {

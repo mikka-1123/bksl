@@ -16,5 +16,7 @@ namespace Contact.api.Models
 
         [Required]
         public string Message { get; set; } = string.Empty;
+
+        public string RecaptchaToken { get; set; } // Add this
     }
 }

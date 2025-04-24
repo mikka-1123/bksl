@@ -7,6 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useToast } from '@/hooks/use-toast';
 import { apiRequest } from '@/lib/queryClient';
 import { submitContactForm } from '@/services/contact';
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters long' }),
@@ -18,6 +19,8 @@ const contactFormSchema = z.object({
 type ContactFormData = z.infer<typeof contactFormSchema>;
 
 const ContactUs = () => {
+  const { executeRecaptcha } = useGoogleReCaptcha();
+  const [recaptchaToken, setRecaptchaToken] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   
@@ -37,10 +40,21 @@ const ContactUs = () => {
   });
 
   const onSubmit = async (data: ContactFormData) => {
+
+    if (!executeRecaptcha) {
+      toast({ title: "Error", description: "CAPTCHA not loaded", variant: "destructive" });
+      return;
+    }
+
     setIsSubmitting(true);
-    try {      
-      const result = await submitContactForm(data); 
-      
+    try {    
+
+      // Get CAPTCHA token first
+      const token = await executeRecaptcha('contact_submit');
+      setRecaptchaToken(token);
+
+      const result = await submitContactForm({...data, recaptchaToken: token}); 
+
       toast({
         title: "Success!",
         description: result.message,

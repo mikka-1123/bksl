@@ -10,11 +10,15 @@ namespace Contact.api.Controllers
     {
         private readonly IEmailService _emailService;
         private readonly ILogger<ContactController> _logger;
+        private readonly RecaptchaService _recaptchaService;
 
-        public ContactController(IEmailService emailService, ILogger<ContactController> logger)
+        public ContactController(IEmailService emailService, 
+            ILogger<ContactController> logger, 
+            RecaptchaService recaptchaService)
         {
             _emailService = emailService;
             _logger = logger;
+            _recaptchaService = recaptchaService;
         }
 
         [HttpPost]
@@ -28,6 +32,18 @@ namespace Contact.api.Controllers
                     Message = "Invalid form data"
                 });
             }
+
+            // Verify reCAPTCHA token
+            if (!await _recaptchaService.VerifyToken(request.RecaptchaToken))
+            {
+                _logger.LogWarning("reCAPTCHA verification failed for {Email}", request.Email);
+                return BadRequest(new ContactResponse
+                {
+                    Success = false,
+                    Message = "CAPTCHA verification failed. Please try again."
+                });
+            }
+
 
             _logger.LogInformation("Processing contact form submission from {Name} ({Email})", request.Name, request.Email);
 
