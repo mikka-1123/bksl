@@ -5,3 +5,6 @@ server/public
 vite.config.ts.*
 *.tar.gz
 backend/Contact.api/.vs
+backend_email_creds.txt
+cred.txt
+client/.env
