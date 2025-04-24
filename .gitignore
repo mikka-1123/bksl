@@ -11,11 +11,11 @@ client/.env
 
 # Ignore env and config files inside backend/
 backend/.env
-backend/appsettings.Development.json
-backend/appsettings.Local.json
-backend/appsettings.json
+backend/Contact.api/appsettings.Development.json
+backend/Contact.apiappsettings.Local.json
+backend/Contact.apiappsettings.json
 
 # Ignore build folders inside backend/
-backend/bin/
-backend/obj/
-backend/publish/
+backend/Contact.apibin/
+backend/Contact.apiobj/
+backend/Contact.apipublish/
