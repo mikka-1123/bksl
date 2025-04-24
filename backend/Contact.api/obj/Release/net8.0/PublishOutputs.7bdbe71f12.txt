@@ -1,0 +1,17 @@
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Contact.api.exe
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\appsettings.Development.json
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\appsettings.json
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Contact.api.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Contact.api.deps.json
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Contact.api.runtimeconfig.json
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Contact.api.pdb
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\BouncyCastle.Cryptography.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\MailKit.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Microsoft.AspNetCore.OpenApi.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Microsoft.OpenApi.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\MimeKit.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\System.Security.Cryptography.Pkcs.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Release\net8.0\publish\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

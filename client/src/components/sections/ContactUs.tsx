@@ -6,6 +6,7 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useToast } from '@/hooks/use-toast';
 import { apiRequest } from '@/lib/queryClient';
+import { submitContactForm } from '@/services/contact';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters long' }),
@@ -37,18 +38,26 @@ const ContactUs = () => {
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    try {
-      await apiRequest('POST', '/api/contact', data);
+    try {      
+      const result = await submitContactForm(data); 
+      
       toast({
-        title: "Message Sent!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Success!",
+        description: result.message,
         variant: "default",
       });
+
       reset();
     } catch (error) {
+      let errorMessage = "Failed to send message";
+    
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
+
       toast({
         title: "Error",
-        description: "There was a problem sending your message. Please try again.",
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {

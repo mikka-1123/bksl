@@ -3,6 +3,7 @@ using MailKit.Security;
 using Microsoft.Extensions.Options;
 using MimeKit;
 using Contact.api.Models;
+using System.Net;
 
 namespace Contact.api.Services
 {
@@ -17,17 +18,37 @@ namespace Contact.api.Services
             _logger = logger;
         }
 
+        // Email Varification
+        public async Task<bool> IsValidEmail(string email)
+        {
+            try
+            {
+                // Check MX records
+                var host = email.Split('@')[1];
+                var mxRecords = await Dns.GetHostAddressesAsync(host);
+                return mxRecords.Length > 0;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         public async Task<bool> SendContactEmailAsync(ContactRequest request)
         {
             try
             {
+                // Validate email first
+                if (!await IsValidEmail(request.Email))
+                {
+                    _logger.LogWarning($"Invalid email format or domain: {request.Email}");
+                    return false;
+                }
+
                 var message = new MimeMessage();
                 message.From.Add(new MailboxAddress(_emailSettings.FromName, _emailSettings.FromEmail));
 
-                // Use ToEmail from the request if provided, otherwise fall back to the settings
-                string recipientEmail = !string.IsNullOrEmpty(request.Email)
-                    ? request.Email
-                    : _emailSettings.ToEmail;
+                string recipientEmail = !string.IsNullOrEmpty(_emailSettings.ToEmail) ? _emailSettings.ToEmail : "dopeh777@gmail.com";
 
                 message.To.Add(new MailboxAddress("", recipientEmail));
                 message.Subject = $"New Contact Form Submission: {request.Subject}";
@@ -112,6 +133,6 @@ namespace Contact.api.Services
                 _logger.LogError(ex, "Failed to send email");
                 return false;
             }
-        } 
+        }
     }
 }

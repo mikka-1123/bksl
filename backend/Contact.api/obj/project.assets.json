@@ -735,11 +735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\2025\\Krishna_Logistics\\PlayGround\\Replit\\V3_with_logo\\Playground\\V5\\ShippingLogistics\\ShippingLogistics\\backend\\Contact.api\\Contact.api.csproj",
+      "projectUniqueName": "D:\\Project\\2025\\Krishna_Logistics\\PlayGround\\Replit\\V3_with_logo\\Playground\\V5\\ShippingLogistics\\backend\\Contact.api\\Contact.api.csproj",
       "projectName": "Contact.api",
-      "projectPath": "D:\\Project\\2025\\Krishna_Logistics\\PlayGround\\Replit\\V3_with_logo\\Playground\\V5\\ShippingLogistics\\ShippingLogistics\\backend\\Contact.api\\Contact.api.csproj",
+      "projectPath": "D:\\Project\\2025\\Krishna_Logistics\\PlayGround\\Replit\\V3_with_logo\\Playground\\V5\\ShippingLogistics\\backend\\Contact.api\\Contact.api.csproj",
       "packagesPath": "C:\\Users\\Sonih\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\2025\\Krishna_Logistics\\PlayGround\\Replit\\V3_with_logo\\Playground\\V5\\ShippingLogistics\\ShippingLogistics\\backend\\Contact.api\\obj\\",
+      "outputPath": "D:\\Project\\2025\\Krishna_Logistics\\PlayGround\\Replit\\V3_with_logo\\Playground\\V5\\ShippingLogistics\\backend\\Contact.api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -810,7 +810,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

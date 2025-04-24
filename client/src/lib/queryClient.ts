@@ -9,9 +9,12 @@ async function throwIfResNotOk(res: Response) {
 
 export async function apiRequest(
   method: string,
-  url: string,
+  endpoint: string,
   data?: unknown | undefined,
 ): Promise<Response> {
+
+  const url = `${import.meta.env.VITE_API_BASE_URL}${endpoint}`;
+
   const res = await fetch(url, {
     method,
     headers: data ? { "Content-Type": "application/json" } : {},

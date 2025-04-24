@@ -31,17 +31,17 @@ const Hero = () => {
       <div className="absolute top-1/2 left-0 w-full h-1/2 bg-gradient-to-r from-[#0f2549]/5 to-transparent -z-10"></div>
 
       {/* Left side decorative elements */}
-      <div className="absolute top-32 left-10 w-64 h-64 opacity-5 -z-5 hidden lg:block">
+      {/* <div className="absolute top-32 left-10 w-64 h-64 opacity-10 -z-5 hidden lg:block">
         <svg viewBox="0 0 200 200" className="w-full h-full">
           <circle cx="100" cy="100" r="80" stroke="#0f2549" strokeWidth="1" fill="none" />
           <circle cx="100" cy="100" r="60" stroke="#0ea5e9" strokeWidth="0.5" fill="none" />
           <path d="M100,20 L100,180 M20,100 L180,100" stroke="#0f2549" strokeWidth="0.5" />
           <path d="M30,30 L170,170 M30,170 L170,30" stroke="#0f2549" strokeWidth="0.5" strokeDasharray="4,4" />
         </svg>
-      </div>
+      </div> */}
       
       <motion.div 
-        className="absolute top-48 left-24 w-32 h-32 opacity-5 -z-5 hidden lg:block"
+        className="absolute top-32 left-[22rem] w-50 h-50 opacity-[0.03] -z-5 hidden lg:block"
         animate={{ 
           rotate: -360,
         }}
@@ -52,17 +52,28 @@ const Hero = () => {
         }}
       >
         <svg viewBox="0 0 100 100" className="w-full h-full">
-          <path d="M50,0 A50,50 0 0,1 50,100 A50,50 0 0,1 50,0" 
-                stroke="#0ea5e9" 
-                strokeWidth="1" 
-                fill="none" 
-                strokeDasharray="3,3" />
-          <path d="M0,50 A50,50 0 0,1 100,50 A50,50 0 0,1 0,50" 
-                stroke="#0f2549" 
-                strokeWidth="1" 
-                fill="none" 
-                strokeDasharray="3,3" />
+          <circle cx="50" cy="50" r="45" stroke="#0f2549" strokeWidth="1" fill="none" />
+          <circle cx="50" cy="50" r="39" stroke="#0ea5e9" strokeWidth="0.5" fill="none" />
+          <path d="M50,5 L50,95 M5,50 L95,50" stroke="#0f2549" strokeWidth="1" />
+          <path d="M26,26 L74,74 M26,74 L74,26" stroke="#0f2549" strokeWidth="0.5" strokeDasharray="2,2" />
+          <circle cx="50" cy="50" r="3" fill="#0ea5e9" />
         </svg>
+      </motion.div>
+
+      
+
+      <motion.div 
+        className="hidden lg:block absolute top-32 right-10 w-40 h-40 opacity-10 -z-5"
+        animate={{ 
+          rotate: 360,
+        }}
+        transition={{ 
+          duration: 120, 
+          repeat: Infinity, 
+          ease: "linear" 
+        }}
+      >
+        
       </motion.div>
 
       {/* Nautical map grid lines */}
