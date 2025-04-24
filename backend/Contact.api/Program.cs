@@ -1,9 +1,13 @@
 using Contact.api.Models;
 using Contact.api.Services;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Load environment variables from the .env file
+Env.Load(); // This loads the environment variables from the .env file
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -84,3 +84,6 @@ D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\S
 D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\obj\Debug\net8.0\Contact.api.pdb
 D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\obj\Debug\net8.0\Contact.api.genruntimeconfig.cache
 D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\obj\Debug\net8.0\ref\Contact.api.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Debug\net8.0\dotenv.net.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Debug\net8.0\DotNetEnv.dll
+D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Debug\net8.0\Sprache.dll
