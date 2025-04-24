@@ -1,21 +1,26 @@
-node_modules
-dist
+# Node and frontend build
+node_modules/
+dist/
 .DS_Store
-server/public
+server/public/
 vite.config.ts.*
 *.tar.gz
-backend/Contact.api/.vs
-backend_email_creds.txt
-cred.txt
+
+# Frontend environment files
 client/.env
 
-# Ignore env and config files inside backend/
+# Backend general ignores
 backend/.env
-backend/Contact.api/appsettings.Development.json
-backend/Contact.apiappsettings.Local.json
-backend/Contact.apiappsettings.json
+backend_email_creds.txt
+cred.txt
 
-# Ignore build folders inside backend/
-backend/Contact.apibin/
-backend/Contact.apiobj/
-backend/Contact.apipublish/
+# Visual Studio and build folders (corrected slashes and spacing)
+backend/Contact.api/.vs/
+backend/Contact.api/bin/
+backend/Contact.api/obj/
+backend/Contact.api/publish/
+
+# Appsettings files (corrected missing slashes)
+backend/Contact.api/appsettings.json
+backend/Contact.api/appsettings.Development.json
+backend/Contact.api/appsettings.Local.json
