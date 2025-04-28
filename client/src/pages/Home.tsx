@@ -14,6 +14,7 @@ import ClientLogos from "@/components/sections/ClientLogos";
 import GoldDirection from "@/components/sections/GoldDirection";
 import ContactUs from "@/components/sections/ContactUs";
 import ShipShowcase from "@/components/sections/ShipShowcase";
+import GlobalPresence from "@/components/sections/GlobalPresence";
 
 export default function Home() {
   useEffect(() => {
@@ -54,6 +55,7 @@ export default function Home() {
         <WhoWeAre />
         <WhyChooseUs />
         <ShipShowcase />
+        <GlobalPresence />
         <AboutUs />
         <OurVision />
         <OurLegendary />

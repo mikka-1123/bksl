@@ -30,3 +30,24 @@
 .grecaptcha-badge {
   visibility: hidden;
 }
+
+/* Global Presence Map Styles */
+.location-marker.animate-in {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.location-marker {
+  transform: translate(-50%, -50%) translateY(10px);
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}

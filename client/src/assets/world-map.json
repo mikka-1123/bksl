@@ -1,0 +1,107 @@
+{
+  "type": "Topology",
+  "arcs": [],
+  "objects": {
+    "countries": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "USA",
+          "properties": {
+            "name": "United States"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "CAN",
+          "properties": {
+            "name": "Canada"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "GBR",
+          "properties": {
+            "name": "United Kingdom"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "DEU",
+          "properties": {
+            "name": "Germany"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "FRA",
+          "properties": {
+            "name": "France"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "AUS",
+          "properties": {
+            "name": "Australia"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "JPN",
+          "properties": {
+            "name": "Japan"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "CHN",
+          "properties": {
+            "name": "China"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "IND",
+          "properties": {
+            "name": "India"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "BRA",
+          "properties": {
+            "name": "Brazil"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "ZAF",
+          "properties": {
+            "name": "South Africa"
+          }
+        },
+        {
+          "type": "MultiPolygon",
+          "arcs": [],
+          "id": "ARE",
+          "properties": {
+            "name": "United Arab Emirates"
+          }
+        }
+      ]
+    }
+  }
+} 

@@ -1,0 +1,47 @@
+{
+  "type": "Topology",
+  "arcs": [],
+  "objects": {
+    "world": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Polygon",
+          "properties": { "name": "North America" },
+          "id": "NA",
+          "arcs": []
+        },
+        {
+          "type": "Polygon", 
+          "properties": { "name": "South America" },
+          "id": "SA",
+          "arcs": []
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Europe" },
+          "id": "EU",
+          "arcs": []
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Africa" },
+          "id": "AF",
+          "arcs": []
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Asia" },
+          "id": "AS",
+          "arcs": []
+        },
+        {
+          "type": "Polygon",
+          "properties": { "name": "Oceania" },
+          "id": "OC",
+          "arcs": []
+        }
+      ]
+    }
+  }
+} 
