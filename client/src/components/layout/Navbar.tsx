@@ -79,12 +79,16 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, type: "spring", stiffness: 100 }}
           >
-            <a href="#">
-            <img 
-              src={logoImage} 
-              alt="BAAL KRISHNA SHIPPING & LOGISTICS" 
-              className="w-full h-auto object-contain"
-            /></a>
+            <a href="#" onClick={(e) => {
+              e.preventDefault();
+              scrollToTop();
+            }}>
+              <img 
+                src={logoImage} 
+                alt="BAAL KRISHNA SHIPPING & LOGISTICS" 
+                className="w-full h-auto object-contain"
+              />
+            </a>
           </motion.div>
           
           <div className="flex items-center justify-between">
