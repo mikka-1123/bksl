@@ -4,6 +4,37 @@ import { Menu, X, ChevronUp } from "lucide-react";
 import logoImage from "../../assets/logo.png";
 import { useIsMobile } from "../../hooks/use-mobile";
 
+const logoShineAnimation = `
+@keyframes logo-shine {
+  0% {
+    left: -40%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+.logo-shine-effect {
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 75%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.7) 50%, transparent 100%);
+  pointer-events: none;
+  filter: blur(1px);
+  opacity: 0;
+  animation: logo-shine 2.5s infinite;
+}
+`;
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -67,7 +98,6 @@ const Navbar = () => {
         className={`fixed w-full bg-white/95 backdrop-blur-sm z-50 transition-all duration-300 ${scrolled ? 'py-5 shadow-md' : 'py-[40px]'}`}
       >
         <div className="container mx-auto px-4 md:px-6 relative">
-          {/* Logo container - positioned absolutely to go outside navbar */}
           <motion.div 
             className="absolute left-4 md:left-20 top-0 z-10"
             style={{ 
@@ -83,11 +113,14 @@ const Navbar = () => {
               e.preventDefault();
               scrollToTop();
             }}>
-              <img 
-                src={logoImage} 
-                alt="BAAL KRISHNA SHIPPING & LOGISTICS" 
-                className="w-full h-auto object-contain"
-              />
+              <div className="relative">
+                <img 
+                  src={logoImage} 
+                  alt="BAAL KRISHNA SHIPPING & LOGISTICS" 
+                  className="w-full h-auto object-contain"
+                />
+                <div className="logo-shine-effect" />
+              </div>
             </a>
           </motion.div>
           
@@ -196,6 +229,8 @@ const Navbar = () => {
       >
         <ChevronUp size={24} />
       </motion.button>
+
+      <style>{logoShineAnimation}</style>
     </>
   );
 };
