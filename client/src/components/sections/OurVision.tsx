@@ -61,7 +61,7 @@ const OurVision = () => {
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
                     <Check className="h-3 w-3 text-white" />
                   </div>
-                  <p className="ml-3 text-gray-600">Leveraging AI and machine learning to optimize routes and delivery times</p>
+                  <p className="ml-3 text-gray-600">Implementing advanced tracking and monitoring systems to ensure real-time visibility and operational efficiency</p>
                 </motion.div>
                 
                 <motion.div 
@@ -99,8 +99,13 @@ const OurVision = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
-                <img 
+                {/* <img 
                   src="https://images.unsplash.com/photo-1678983650873-d762acdb046e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                  alt="Smart Logistics" 
+                  className="w-full h-full object-cover rounded"
+                /> */}
+                <img 
+                  src="../../src/assets/smartLogistics.png" 
                   alt="Smart Logistics" 
                   className="w-full h-full object-cover rounded"
                 />
