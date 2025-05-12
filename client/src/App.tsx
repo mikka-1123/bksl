@@ -6,6 +6,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import { AnimatePresence } from "framer-motion";
 import { FormProvider } from "@/context/FormContext";
+import WhatsAppSupport from "@/components/WhatsAppSupport";
 
 function Router() {
   return (
@@ -25,6 +26,10 @@ function App() {
       <FormProvider>
         <Router />
         <Toaster />
+        <WhatsAppSupport 
+          phoneNumber="9033372022"
+          defaultMessage="Hello! I need assistance with your logistics services."
+        />
       </FormProvider>
     </QueryClientProvider>
   );

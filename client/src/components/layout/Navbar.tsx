@@ -215,7 +215,7 @@ const Navbar = () => {
 
       {/* Scroll to top button */}
       <motion.button
-        className="fixed bottom-6 right-6 z-40 p-3 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] text-white shadow-md hover:shadow-lg focus:outline-none transition-all duration-300"
+        className="fixed bottom-28 right-6 z-40 p-3 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] text-white shadow-md hover:shadow-lg focus:outline-none transition-all duration-300"
         onClick={scrollToTop}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ 
