@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import logo from '../../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -6,11 +7,19 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
-                <span className="text-[#0f2549] font-bold text-xl">OW</span>
+            <div className="flex flex-col items-center justify-center">
+              <div className="relative flex items-center justify-center mb-4">
+                <span className="absolute w-44 h-44 rounded-full bg-gradient-to-br from-blue-400/30 via-blue-700/20 to-transparent blur-2xl z-0"></span>
+                <img 
+                  src={logo} 
+                  alt="Baal Krishna Shipping & Logistics Logo" 
+                  className="w-32 h-32 object-contain rounded-full bg-white border-4 border-blue-100 shadow-xl z-10 transition-transform duration-300 hover:scale-105" 
+                />
               </div>
-              <span className="text-white font-bold text-xl">OceanWay</span>
+              <div className="text-center mb-6">
+                <span className="block text-white font-extrabold text-2xl tracking-wide drop-shadow-lg">BAAL KRISHNA</span>
+                <span className="block text-blue-200 font-semibold text-md tracking-widest">SHIPPING & LOGISTICS</span>
+              </div>
             </div>
             <p className="text-gray-300 mb-6">
               Transforming global logistics through innovation, reliability, and exceptional service for over 30 years.
@@ -31,7 +40,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div>
+          <div className="lg:col-start-2 lg:items-center lg:justify-center flex flex-col lg:text-center">
             <h4 className="text-lg font-bold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li><a href="#who-we-are" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
