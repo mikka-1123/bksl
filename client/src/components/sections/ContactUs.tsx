@@ -184,7 +184,7 @@ const ContactUs = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-[#0f2549]">Phone</h4>
-                    <p className="text-gray-600">+1 (800) 123-4567</p>
+                    <p className="text-gray-600">+91 8980753743</p>
                   </div>
                 </div>
                 
@@ -222,13 +222,16 @@ const ContactUs = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               {/* Google Map would be embedded here */}
-              <div className="w-full h-full bg-gray-200 rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1618606758667-2523a330da83?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                  alt="Map Location" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="w-full h-full bg-gray-200 rounded-lg overflow-hidden">
+              {/* <iframe
+                title="Google Map"
+                src="https://www.google.com/maps?q=Gandhidham&output=embed"
+                className="w-full h-full"
+                loading="lazy"
+                allowFullScreen
+              ></iframe> */}
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.7215666590984!2d70.13548828661443!3d23.064630891703466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950b98cd58c81eb%3A0xc1d0f8b8876d6d89!2sKrishna%20Logistics!5e0!3m2!1sen!2sin!4v1772033508574!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             </motion.div>
           </div>
         </div>
