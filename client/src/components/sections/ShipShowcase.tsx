@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Ship, Anchor, Navigation } from 'lucide-react';
+import { ArrowRight, Ship, Anchor, Navigation, FlaskConical, Shirt, Factory, PackageSearch } from 'lucide-react';
 import ShipAnimation from '@/components/3d/ShipAnimation';
 
 const ShipShowcase = () => {
@@ -78,7 +78,7 @@ const ShipShowcase = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Advanced Fleet Technology
+            Industries We Serve
           </motion.h2>
           <motion.p 
             className="text-lg text-white/80 max-w-3xl mx-auto"
@@ -87,7 +87,7 @@ const ShipShowcase = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Our state-of-the-art vessels are equipped with satellite tracking, advanced navigation systems, and eco-friendly propulsion technology.
+            Delivering customized logistics and supply chain solutions across diverse industries with reliability, efficiency, and care.
           </motion.p>
         </div>
         
@@ -103,10 +103,10 @@ const ShipShowcase = () => {
               custom={0}
             >
               <div className="flex items-center space-x-3 mb-3">
-                <Navigation className="h-5 w-5 text-[#0ea5e9]" />
-                <h3 className="text-lg font-semibold text-white">Navigation</h3>
+                <FlaskConical className="h-5 w-5 text-[#0ea5e9]" />
+                <h3 className="text-lg font-semibold text-white">Chemicals</h3>
               </div>
-              <p className="text-white/80 text-sm">Advanced GPS systems with AI-assisted routing for optimal course planning.</p>
+              <p className="text-white/80 text-sm">Safe and compliant transportation solutions for industrial chemicals and specialty products.</p>
             </motion.div>
             
             <motion.div 
@@ -118,10 +118,10 @@ const ShipShowcase = () => {
               custom={1}
             >
               <div className="flex items-center space-x-3 mb-3">
-                <Anchor className="h-5 w-5 text-[#0ea5e9]" />
-                <h3 className="text-lg font-semibold text-white">Stability</h3>
+                <Shirt className="h-5 w-5 text-[#0ea5e9]" />
+                <h3 className="text-lg font-semibold text-white">Textiles</h3>
               </div>
-              <p className="text-white/80 text-sm">Dynamic ballast systems maintain perfect stability even in rough seas.</p>
+              <p className="text-white/80 text-sm">Efficient freight and distribution services supporting textile manufacturers and exporters.</p>
             </motion.div>
           </div>
           
@@ -149,10 +149,10 @@ const ShipShowcase = () => {
               custom={2}
             >
               <div className="flex items-center space-x-3 mb-3">
-                <Ship className="h-5 w-5 text-[#0ea5e9]" />
-                <h3 className="text-lg font-semibold text-white">Propulsion</h3>
+                <Factory className="h-5 w-5 text-[#0ea5e9]" />
+                <h3 className="text-lg font-semibold text-white">Engineering</h3>
               </div>
-              <p className="text-white/80 text-sm">Hybrid engines reduce emissions by 35% while maintaining optimal speed.</p>
+              <p className="text-white/80 text-sm">Reliable movement of machinery, equipment, spare parts, and industrial cargo.</p>
             </motion.div>
             
             <motion.div 
@@ -164,10 +164,10 @@ const ShipShowcase = () => {
               custom={3}
             >
               <div className="flex items-center space-x-3 mb-3">
-                <ArrowRight className="h-5 w-5 text-[#0ea5e9]" />
-                <h3 className="text-lg font-semibold text-white">Efficiency</h3>
+                <PackageSearch className="h-5 w-5 text-[#0ea5e9]" />
+                <h3 className="text-lg font-semibold text-white">FMCG</h3>
               </div>
-              <p className="text-white/80 text-sm">Advanced hull design reduces water resistance and increases fuel efficiency.</p>
+              <p className="text-white/80 text-sm">Fast and dependable logistics solutions for consumer goods and retail supply chains.</p>
             </motion.div>
           </div>
         </div>

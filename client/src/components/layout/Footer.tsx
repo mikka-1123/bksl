@@ -43,7 +43,7 @@ const Footer = () => {
           <div className="lg:col-start-2 lg:items-center lg:justify-center flex flex-col lg:text-center">
             <h4 className="text-lg font-bold mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              <li><a href="#who-we-are" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#about-us" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
               <li><a href="#why-choose-us" className="text-gray-300 hover:text-white transition-colors">Services</a></li>
               <li><a href="#timeline" className="text-gray-300 hover:text-white transition-colors">Our Journey</a></li>
               <li><a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a></li>

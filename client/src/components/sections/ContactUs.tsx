@@ -203,11 +203,9 @@ const ContactUs = () => {
                     <MapPin className="h-5 w-5 text-white" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-[#0f2549]">Headquarters</h4>
+                    <h4 className="text-lg font-medium text-[#0f2549]">Office Address</h4>
                     <p className="text-gray-600">
-                      123 Logistics Way<br />
-                      San Francisco, CA 94105<br />
-                      United States
+                      347P+RM7, Sector 8, <br /> Gandhidham, Gujarat 370201
                     </p>
                   </div>
                 </div>
@@ -223,7 +221,7 @@ const ContactUs = () => {
             >
               {/* Google Map would be embedded here */}
             <div className="w-full h-full bg-gray-200 rounded-lg overflow-hidden">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.7215666590984!2d70.13548828661443!3d23.064630891703466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950b98cd58c81eb%3A0xc1d0f8b8876d6d89!2sKrishna%20Logistics!5e0!3m2!1sen!2sin!4v1772033508574!5m2!1sen!2sin" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.7215666590984!2d70.13548828661443!3d23.064630891703466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950b98cd58c81eb%3A0xc1d0f8b8876d6d89!2sKrishna%20Logistics!5e0!3m2!1sen!2sin!4v1772033508574!5m2!1sen!2sin" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             </motion.div>
           </div>

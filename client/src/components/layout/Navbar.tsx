@@ -133,6 +133,7 @@ const Navbar = () => {
               <a href="#why-choose-us" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Why Choose Us</a>
               <a href="#timeline" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Timeline</a>
               <a href="#testimonials" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Testimonials</a>
+              <a href="#about-us" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">About Us</a>
               <a href="#contact" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Contact</a>
             </nav>
             

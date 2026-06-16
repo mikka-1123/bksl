@@ -22,93 +22,64 @@ const OurVision = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0f2549] mb-6">Our Vision</h2>
+            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6 }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0f2549] mb-6">Our Mission</h2>
               <div className="h-1 w-20 bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] rounded-full mb-8"></div>
               
-              <p className="text-lg text-gray-600 mb-6">
-                We envision a future where global shipping is seamless, sustainable, and accessible to businesses of all sizes. Our mission is to break down logistical barriers through innovation and exceptional service.
-              </p>
-              
               <div className="space-y-4 mt-8">
-                <motion.div 
-                  className="flex items-start"
-                  variants={listItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.2 }}
-                  custom={0}
-                >
+                <motion.div className="flex items-start" variants={listItemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
                     <Check className="h-3 w-3 text-white" />
                   </div>
-                  <p className="ml-3 text-gray-600">Pioneering sustainable shipping practices to reduce environmental impact</p>
+                  <p className="ml-3 text-gray-600">To provide safe, reliable, and cost-effective logistics solutions</p>
                 </motion.div>
                 
-                <motion.div 
-                  className="flex items-start"
-                  variants={listItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.2 }}
-                  custom={1}
-                >
+                <motion.div className="flex items-start" variants={listItemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={1}>
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
                     <Check className="h-3 w-3 text-white" />
                   </div>
-                  <p className="ml-3 text-gray-600">Implementing advanced tracking and monitoring systems to ensure real-time visibility and operational efficiency</p>
+                  <p className="ml-3 text-gray-600">To ensure timely delivery and complete customer satisfaction. </p>
                 </motion.div>
                 
-                <motion.div 
-                  className="flex items-start"
-                  variants={listItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.2 }}
-                  custom={2}
-                >
+                <motion.div className="flex items-start" variants={listItemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={2}>
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
                     <Check className="h-3 w-3 text-white" />
                   </div>
-                  <p className="ml-3 text-gray-600">Building strategic partnerships to create an unmatched global logistics network</p>
+                  <p className="ml-3 text-gray-600">To leverage technology and innovation for improving operational efficiency.</p>
+                </motion.div>
+
+                <motion.div className="flex items-start" variants={listItemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={2}>
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                    <Check className="h-3 w-3 text-white" />
+                  </div>
+                  <p className="ml-3 text-gray-600">To build strong and lasting relationships with customers, partners, and employees.</p>
+                </motion.div>
+
+                <motion.div className="flex items-start" variants={listItemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={2}>
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                    <Check className="h-3 w-3 text-white" />
+                  </div>
+                  <p className="ml-3 text-gray-600">To contribute to the growth of our customers by offering flexible and customized logistics services.</p>
                 </motion.div>
               </div>
+
+              <p className="text-lg text-gray-600 mt-6">
+                We are committed to delivering excellence in every shipment and creating value throughout the supply chain.
+              </p>
             </motion.div>
             
-            <motion.div 
-              className="relative"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
+            <motion.div  className="relative" initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, delay: 0.2 }}>
               <img 
                 src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                alt="Future of Shipping" 
-                className="rounded-xl shadow-2xl w-full h-auto transform -rotate-2"
-              />
-              <motion.div 
-                className="absolute -bottom-5 -right-5 w-36 h-36 rounded-lg bg-white p-4 shadow-xl transform rotate-3"
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-              >
+                alt="Future of Shipping" className="rounded-xl shadow-2xl w-full h-auto transform -rotate-2" />
+              
+              <motion.div className="absolute -bottom-5 -right-5 w-36 h-36 rounded-lg bg-white p-4 shadow-xl transform rotate-3" initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.6 }}>
                 {/* <img 
                   src="https://images.unsplash.com/photo-1678983650873-d762acdb046e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
                   alt="Smart Logistics" 
                   className="w-full h-full object-cover rounded"
                 /> */}
-                <img 
-                  src="../../src/assets/smartLogistics.png" 
-                  alt="Smart Logistics" 
-                  className="w-full h-full object-cover rounded"
-                />
+                <img src="../../src/assets/smartLogistics.png" alt="Smart Logistics" className="w-full h-full object-cover rounded"/>
               </motion.div>
             </motion.div>
           </div>

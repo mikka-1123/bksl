@@ -153,7 +153,7 @@ const Hero = () => {
               </div>
               <div className="bg-white rounded-lg p-3 shadow-[5px_5px_15px_rgba(0,0,0,0.05),-5px_-5px_15px_rgba(255,255,255,0.9)] border border-gray-100">
                 <p className="text-sm text-gray-500">Shipments</p>
-                <p className="text-lg font-bold text-[#0f2549]">1M+</p>
+                <p className="text-lg font-bold text-[#0f2549]">1000+</p>
               </div>
               <div className="bg-white rounded-lg p-3 shadow-[5px_5px_15px_rgba(0,0,0,0.05),-5px_-5px_15px_rgba(255,255,255,0.9)] border border-gray-100">
                 <p className="text-sm text-gray-500">Accuracy</p>
@@ -187,14 +187,14 @@ const Hero = () => {
               </motion.a>
             </div>
             
-            <div className="mt-10 flex items-center space-x-6">
+            {/* <div className="mt-10 flex items-center space-x-6">
               <div className="flex -space-x-2">
                 <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt="Shipping Professional" className="w-8 h-8 rounded-full border-2 border-white" />
                 <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt="Logistics Expert" className="w-8 h-8 rounded-full border-2 border-white" />
                 <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt="Supply Chain Manager" className="w-8 h-8 rounded-full border-2 border-white" />
               </div>
               <span className="text-sm text-gray-600">Trusted by <span className="font-medium text-[#0f2549]">2,000+</span> businesses worldwide</span>
-            </div>
+            </div> */}
           </motion.div>
           
           <motion.div 
@@ -202,8 +202,8 @@ const Hero = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            style={{ y, opacity }}
-          >
+            style={{ y, opacity }}>
+              
             {/* Main image with bow-shaped mask and neumorphic shadow */}
             <div className="relative z-10 overflow-hidden rounded-[24px_24px_60px_24px] shadow-[10px_10px_30px_rgba(0,0,0,0.1),-10px_-10px_30px_rgba(255,255,255,0.8)]">
               <img 
