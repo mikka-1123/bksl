@@ -104,7 +104,7 @@ const MapComponent: React.FC = () => {
             }}
           >
             {/* World map - using standard TopoJSON world map */}
-            <ZoomableGroup disablePanning>
+            <ZoomableGroup>
               <Geographies geography="https://unpkg.com/world-atlas@2.0.2/countries-110m.json">
                 {({ geographies }) =>
                   geographies.map((geo) => (

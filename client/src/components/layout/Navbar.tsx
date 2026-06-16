@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Menu, X, ChevronUp } from "lucide-react";
-import logoImage from "../../assets/logo.png";
+import logoImage from "../../assets/logo.svg";
 import { useIsMobile } from "../../hooks/use-mobile";
 
 const logoShineAnimation = `
