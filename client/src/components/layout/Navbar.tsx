@@ -129,7 +129,8 @@ const Navbar = () => {
             <div className="w-28 md:w-44 lg:w-48 h-10 invisible">{/* Spacer that matches logo width */}</div>
             
             <nav className="hidden md:flex items-center space-x-8 pl-2">
-              <a href="#who-we-are" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Who We Are</a>
+              {/* <a href="#who-we-are" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Who We Are</a> */}
+              <a href="#our-services" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Our Services</a>
               <a href="#why-choose-us" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Why Choose Us</a>
               <a href="#timeline" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Timeline</a>
               <a href="#testimonials" className="text-m font-medium text-gray-600 hover:text-[#2563eb] transition-colors">Testimonials</a>

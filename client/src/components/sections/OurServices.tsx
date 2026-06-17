@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
-import { Globe, Ship, Anchor, BarChart3 } from "lucide-react";
+import {
+  Globe,
+  Ship,
+  Anchor,
+  BarChart3,
+  Truck,
+  Plane,
+  Check,
+} from "lucide-react";
 
-const WhoWeAre = () => {
+const OurServices = () => {
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: (i: number) => ({
@@ -14,20 +22,30 @@ const WhoWeAre = () => {
     }),
   };
 
-  const floatingIconVariants = {
-    animate: (i: number) => ({
-      y: [0, -10, 0],
-      transition: {
-        delay: i * 0.2,
-        duration: 3,
-        repeat: Infinity,
-        ease: "easeInOut",
-      },
-    }),
-  };
+    const floatingIconVariants = {
+        animate: (i: number) => ({
+            y: [0, -10, 0],
+            transition: {
+            delay: i * 0.2,
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+            },
+        }),
+    };
+
+    const serviceHighlights = [
+        "Sea Freight",
+        "Air Freight",
+        "Rail Freight",
+        "Customs Clearance",
+        "Transportation Services",
+        "Project Cargo Handling",
+        "Export & Import Documentation",
+    ];
 
   return (
-    <section id="who-we-are" className="py-24 relative overflow-hidden">
+    <section id="our-services" className="py-24 relative overflow-hidden">
       {/* Maritime-inspired background with wave pattern */}
       <div className="absolute inset-0 bg-gradient-to-b from-sky-50 to-white -z-10"></div>
 
@@ -87,7 +105,7 @@ const WhoWeAre = () => {
             <Anchor className="h-6 w-6 text-[#0ea5e9]" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0f2549]">
-            Who We Are
+            Our Services
           </h2>
           <motion.div
             className="mt-4 h-1 w-20 bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] mx-auto rounded-full"
@@ -99,23 +117,19 @@ const WhoWeAre = () => {
         </motion.div>
 
         <motion.div
-          className="max-w-3xl mx-auto text-center mb-16"
+          className="max-w-6xl mx-auto text-center mb-16"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <p className="text-lg text-gray-600 leading-relaxed">
-            Baal Krishna Shipping & Logistics is a pioneer in global shipping
-            and logistics, providing comprehensive solutions tailored to your
-            business needs. With a focus on innovation and customer
-            satisfaction, we transform complex supply chains into competitive
-            advantages.
+            Baal Krishna Logistics offers reliable and cost-effective freight forwarding and transportation solutions designed to meet diverse cargo requirements. From sea freight and air freight to tanker transportation and specialized cargo handling, we ensure safe, timely, and efficient movement of goods across domestic and international markets through our extensive logistics network and industry expertise.
           </p>
         </motion.div>
 
         {/* Bow-shaped top border for the cards section */}
-        <div className="relative mt-16 mb-8">
+        {/* <div className="relative mt-16 mb-8">
           <svg
             className="w-full h-8 text-white"
             viewBox="0 0 1440 48"
@@ -126,7 +140,37 @@ const WhoWeAre = () => {
               fill="currentColor"
             />
           </svg>
-        </div>
+        </div> */}
+
+        <motion.div
+            className="max-w-12xl mx-auto mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            >
+            <div className="flex flex-wrap justify-center gap-3">
+                {serviceHighlights.map((service, index) => (
+                <motion.div
+                    key={service}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.3,
+                        delay: index * 0.05,
+                    }}
+                    whileHover={{
+                        y: -2,
+                        scale: 1.03,
+                    }}
+                    className=" px-5 py-3 rounded-full bg-white border border-sky-100 shadow-sm text-[#0f2549] font-medium text-sm md:text-base flex items-center gap-2 whitespace-nowrap">
+                    <span className="text-[#0ea5e9]">★</span>
+                    {service}
+                </motion.div>
+                ))}
+            </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
           <motion.div
@@ -146,15 +190,46 @@ const WhoWeAre = () => {
             <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#0ea5e9]/10 to-transparent rounded-bl-3xl"></div>
 
             <div className="w-16 h-16 bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] rounded-2xl flex items-center justify-center mb-6 relative z-10 shadow-lg">
-              <Globe className="h-8 w-8 text-white" />
+              <Ship className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-[#0f2549] mb-3">
-              Global Coverage
+              Sea Freight Solutions
             </h3>
-            <p className="text-gray-600">
-              Operating in over 120 countries with strategic partners worldwide
-              to ensure seamless delivery anywhere.
-            </p>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Door-to-Door Services</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Full Container Load (FCL)</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Less than Container Load (LCL)</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Dangerous Goods Handling</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Reefer Cargo Solutions</p>
+            </motion.div>
 
             {/* Animated progress indicator */}
             <div className="mt-6 w-full bg-gray-100 h-1.5 rounded-full overflow-hidden">
@@ -189,15 +264,39 @@ const WhoWeAre = () => {
             <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#2563eb]/10 to-transparent rounded-bl-3xl"></div>
 
             <div className="w-16 h-16 bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] rounded-2xl flex items-center justify-center mb-6 relative z-10 shadow-lg">
-              <Ship className="h-8 w-8 text-white" />
+              <Plane className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-[#0f2549] mb-3">
-              Robust Fleet
+              Air & Rail Freight
             </h3>
-            <p className="text-gray-600">
-              200+ vessels, 10,000+ containers, and an extensive ground fleet
-              ensures we meet any shipping requirement.
-            </p>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Fast Air Freight Solutions</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">First Flight Out Services</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Documentation Support</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">ICD Connectivity: Morbi, Khodiyar, Tughlakabad, Ludhiana</p>
+            </motion.div>
 
             {/* Animated progress indicator */}
             <div className="mt-6 w-full bg-gray-100 h-1.5 rounded-full overflow-hidden">
@@ -210,8 +309,8 @@ const WhoWeAre = () => {
               ></motion.div>
             </div>
             <div className="mt-2 flex justify-between text-xs text-gray-500">
-              <span>Capacity</span>
-              <span className="font-medium">88%</span>
+              <span>On-time rate</span>
+              <span className="font-medium">89%</span>
             </div>
           </motion.div>
 
@@ -232,15 +331,39 @@ const WhoWeAre = () => {
             <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#0ea5e9]/10 to-transparent rounded-bl-3xl"></div>
 
             <div className="w-16 h-16 bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] rounded-2xl flex items-center justify-center mb-6 relative z-10 shadow-lg">
-              <BarChart3 className="h-8 w-8 text-white" />
+              <Truck className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-[#0f2549] mb-3">
-              Speed & Efficiency
+              Tanker Transportation
             </h3>
-            <p className="text-gray-600">
-              Cutting-edge tracking and logistics technology ensures 98.7%
-              on-time delivery with real-time visibility.
-            </p>
+            
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Own Tanker Fleet</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Liquid & Chemical Transportation</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Bulk Liquid Logistics</p>
+            </motion.div>
+
+            <motion.div className="flex items-start" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={0}>
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] flex items-center justify-center mt-1">
+                <Check className="h-3 w-3 text-white" />
+              </div>
+              <p className="ml-3 text-gray-600">Safe & Timely Delivery</p>
+            </motion.div>
 
             {/* Animated progress indicator */}
             <div className="mt-6 w-full bg-gray-100 h-1.5 rounded-full overflow-hidden">
@@ -253,7 +376,7 @@ const WhoWeAre = () => {
               ></motion.div>
             </div>
             <div className="mt-2 flex justify-between text-xs text-gray-500">
-              <span>On-time rate</span>
+              <span>Capacity</span>
               <span className="font-medium">98.7%</span>
             </div>
           </motion.div>
@@ -303,4 +426,4 @@ const WhoWeAre = () => {
   );
 };
 
-export default WhoWeAre;
+export default OurServices;

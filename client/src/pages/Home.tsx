@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import WhoWeAre from "@/components/sections/WhoWeAre";
+import OutServices from "@/components/sections/OurServices";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import AboutUs from "@/components/sections/AboutUs";
 import OurVision from "@/components/sections/OurVision";
@@ -21,28 +22,31 @@ export default function Home() {
     // Handle smooth scrolling for anchor links
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
+      if (
+        target.tagName === "A" &&
+        target.getAttribute("href")?.startsWith("#")
+      ) {
         e.preventDefault();
-        const id = target.getAttribute('href')?.substring(1);
-        const element = document.getElementById(id || '');
+        const id = target.getAttribute("href")?.substring(1);
+        const element = document.getElementById(id || "");
         if (element) {
           window.scrollTo({
             top: element.offsetTop - 80,
-            behavior: 'smooth',
+            behavior: "smooth",
           });
         }
       }
     };
 
-    document.addEventListener('click', handleAnchorClick);
+    document.addEventListener("click", handleAnchorClick);
 
     return () => {
-      document.removeEventListener('click', handleAnchorClick);
+      document.removeEventListener("click", handleAnchorClick);
     };
   }, []);
 
   return (
-    <motion.div 
+    <motion.div
       className="font-sans text-gray-800 overflow-x-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -52,7 +56,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <WhoWeAre />
+        <OutServices />
         <WhyChooseUs />
         <ShipShowcase />
         <GlobalPresence />
