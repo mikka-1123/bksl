@@ -8,7 +8,6 @@ interface WhatsAppSupportProps {
 
 const AGENT = {
   name: 'Lokesh Choudhary',
-  title: 'Technical Support Specialist',
   avatar: 'L', // Initials or image URL
 };
 
