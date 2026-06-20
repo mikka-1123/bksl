@@ -8,15 +8,15 @@ const GoldDirection = () => {
       
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
-          className="max-w-3xl mx-auto text-center text-white"
+          className="max-w-5xl mx-auto text-center text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Charting the Gold Direction</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Moving Cargo with Confidence</h2>
           <p className="text-xl mb-8">
-            As we navigate into the future, our compass remains fixed on innovation, sustainability, and exceptional service. Join us on this journey to redefine what's possible in global logistics.
+            We are committed to delivering reliable, efficient, and cost-effective logistics solutions that help businesses move goods seamlessly across domestic and international markets. Through strong industry partnerships, operational expertise, and customer-focused service, we ensure every shipment reaches its destination safely, on time, and in full compliance with industry standards.
           </p>
           <motion.a 
             href="#contact" 

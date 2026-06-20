@@ -1,5 +1,6 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import logo from '../../assets/logo.png';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -24,18 +25,18 @@ const Footer = () => {
             <p className="text-gray-300 mb-6">
               Transforming global logistics through innovation, reliability, and exceptional service for over 30 years.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-5">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Facebook">
-                <Facebook size={20} />
+                <FaFacebook size={20} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
+                <FaTwitter size={20} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="LinkedIn">
-                <Linkedin size={20} />
+                <FaLinkedin size={20} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Instagram">
-                <Instagram size={20} />
+                <FaInstagram size={20} />
               </a>
             </div>
           </div>
