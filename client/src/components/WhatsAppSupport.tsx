@@ -12,7 +12,7 @@ const AGENT = {
 };
 
 const WhatsAppSupport: React.FC<WhatsAppSupportProps> = ({
-  phoneNumber = '9033372022', // Replace with your actual WhatsApp number
+  phoneNumber = '+918980753743', // Replace with your actual WhatsApp number
   defaultMessage = 'Hello! 👋 Need assistance with Shipping & Logistics solutions? Chat with us on WhatsApp for immediate support.',
 }) => {
   const [isOpen, setIsOpen] = useState(false);
