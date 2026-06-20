@@ -45,7 +45,7 @@ const OurServices = () => {
     ];
 
   return (
-    <section id="our-services" className="py-24 relative overflow-hidden">
+    <section id="our-services" className="py-20 relative overflow-hidden">
       {/* Maritime-inspired background with wave pattern */}
       <div className="absolute inset-0 bg-gradient-to-b from-sky-50 to-white -z-10"></div>
 
@@ -101,12 +101,13 @@ const OurServices = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="inline-block p-3 bg-[#0ea5e9]/10 rounded-full mb-4">
+          <div className="inline-block p-3 bg-[#0ea5e9]/10 rounded-full mb-2">
             <Anchor className="h-6 w-6 text-[#0ea5e9]" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0f2549]">
             Our Services
           </h2>
+          
           <motion.div
             className="mt-4 h-1 w-20 bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] mx-auto rounded-full"
             initial={{ width: 0, opacity: 0 }}
@@ -117,7 +118,7 @@ const OurServices = () => {
         </motion.div>
 
         <motion.div
-          className="max-w-6xl mx-auto text-center mb-16"
+          className="max-w-6xl mx-auto text-center mb-7"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
