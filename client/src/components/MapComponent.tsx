@@ -17,36 +17,36 @@ interface ServiceLocation {
 
 interface RegionData {
   name: string;
-  sites: number;
-  salesPercentage: number;
-  employeesPercentage: number;
+  // sites: number;
+  // salesPercentage: number;
+  // employeesPercentage: number;
 }
 
 // Define regions and their statistics
 const regionData: Record<string, RegionData> = {
   "North America": {
-    name: "North America",
-    sites: 45,
-    salesPercentage: 35,
-    employeesPercentage: 30
+    name: "North America"
+    // sites: 45,
+    // salesPercentage: 35,
+    // employeesPercentage: 30
   },
   "Europe": {
-    name: "Europe, Africa and Middle East",
-    sites: 75,
-    salesPercentage: 40,
-    employeesPercentage: 47
+    name: "Europe, Africa and Middle East"
+    // sites: 75,
+    // salesPercentage: 40,
+    // employeesPercentage: 47
   },
   "Asia": {
-    name: "Asia Pacific",
-    sites: 60,
-    salesPercentage: 25,
-    employeesPercentage: 23
+    name: "Asia Pacific"
+    // sites: 60,
+    // salesPercentage: 25,
+    // employeesPercentage: 23
   },
   "South America": {
-    name: "South America",
-    sites: 30,
-    salesPercentage: 15,
-    employeesPercentage: 12
+    name: "South America"
+    // sites: 30,
+    // salesPercentage: 15,
+    // employeesPercentage: 12
   },
   
 };
@@ -178,7 +178,7 @@ const MapComponent: React.FC = () => {
               </button>
             </div>
             
-            <ul className="space-y-2 text-sm">
+            {/* <ul className="space-y-2 text-sm">
               <li className="flex items-center">
                 <span className="w-1.5 h-1.5 bg-gray-900 rounded-full mr-2"></span>
                 <span>{regionData[selectedRegion].sites} sites</span>
@@ -191,7 +191,7 @@ const MapComponent: React.FC = () => {
                 <span className="w-1.5 h-1.5 bg-gray-900 rounded-full mr-2"></span>
                 <span>{regionData[selectedRegion].employeesPercentage}% employees</span>
               </li>
-            </ul>
+            </ul> */}
           </div>
         )}
       </div>

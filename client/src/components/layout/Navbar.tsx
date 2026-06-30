@@ -111,6 +111,7 @@ const Navbar = () => {
           >
             <a href="#" onClick={(e) => {
               e.preventDefault();
+              window.location.reload();
               scrollToTop();
             }}>
               <div className="relative">
@@ -140,7 +141,7 @@ const Navbar = () => {
             
             <div className="flex items-center space-x-4">
               <a href="#contact" className="hidden md:block px-5 py-2 text-sm font-medium text-white bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] rounded-full hover:shadow-lg transition-all">
-                Talk to Us
+                Request a freight quote
               </a>
               <button 
                 className="md:hidden text-[#0f2549]" 
@@ -209,7 +210,7 @@ const Navbar = () => {
               className="px-5 py-2 text-sm font-medium text-white bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] rounded-full hover:shadow-lg transition-all text-center mt-2"
               onClick={(e) => handleNavClick(e, "#contact")}
             >
-              Talk to Us
+              Request a freight quote
             </a>
           </nav>
         </motion.div>

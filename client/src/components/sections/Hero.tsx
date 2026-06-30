@@ -176,7 +176,7 @@ const Hero = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </motion.div>
               </motion.a>
-              <motion.a 
+              {/* <motion.a 
                 href="#contact" 
                 className="px-6 py-3 bg-white text-[#0f2549] border border-[#0f2549] rounded-full font-medium hover:bg-[#0f2549]/5 transition-colors flex items-center shadow-[5px_5px_15px_rgba(0,0,0,0.05),-5px_-5px_15px_rgba(255,255,255,0.9)]"
                 whileHover={{ scale: 1.05 }}
@@ -184,7 +184,7 @@ const Hero = () => {
               >
                 Talk to Us
                 <MapPin className="ml-2 h-4 w-4" />
-              </motion.a>
+              </motion.a> */}
             </div>
             
             {/* <div className="mt-10 flex items-center space-x-6">
@@ -256,7 +256,7 @@ const Hero = () => {
                 <div className="w-3 h-3 rounded-full bg-[#0ea5e9] mr-2"></div>
                 <p className="text-xs font-semibold text-[#0f2549]">SHIPPING DETAILS</p>
               </div>
-              <p className="text-sm text-gray-600 mt-1">50 Containers, In Transit (Contact us for updates)</p>
+              <p className="text-sm text-gray-600 mt-1">50+ Containers, In Transit (Contact us for updates)</p>
               <div className="w-full bg-gray-200 h-1 rounded-full mt-2">
                 <motion.div 
                   className="h-full bg-gradient-to-r from-[#0ea5e9] to-[#2563eb] rounded-full"

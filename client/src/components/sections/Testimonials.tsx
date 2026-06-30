@@ -2,24 +2,42 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
+// const testimonials = [
+//   {
+//     name: "Alexandra Chen",
+//     role: "Global Sourcing Director, TechGlobal Inc.",
+//     // image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=128&h=128&q=80",
+//     text: "Baal Krishna Shipping & Logistics transformed our supply chain with their innovative tracking technology and reliable service. We reduced transit times by 28% and improved customer satisfaction significantly."
+//   },
+//   {
+//     name: "Robert Martinez",
+//     role: "Supply Chain Manager, Retail Solutions Corp",
+//     // image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=128&h=128&q=80",
+//     text: "The customer service at Baal Krishna Shipping & Logistics is unmatched. When we faced critical delays due to unforeseen weather conditions, their team worked around the clock to find alternative routes and saved our product launch."
+//   },
+//   {
+//     name: "Sarah Johnson",
+//     role: "COO, GreenEarth Products",
+//     // image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=128&h=128&q=80",
+//     text: "As a sustainable products company, Baal Krishna Shipping & Logistics's carbon-neutral shipping options aligned perfectly with our values. Their commitment to environmental responsibility and operational excellence makes them our partner of choice."
+//   }
+// ];
+
 const testimonials = [
   {
-    name: "Alexandra Chen",
-    role: "Global Sourcing Director, TechGlobal Inc.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=128&h=128&q=80",
-    text: "Baal Krishna Shipping & Logistics transformed our supply chain with their innovative tracking technology and reliable service. We reduced transit times by 28% and improved customer satisfaction significantly."
+    name: "Rajesh Patel",
+    role: "Export Manager",
+    text: "We've been working with Baal Krishna Logistics for our export shipments, and their service has always been reliable. Their team ensures timely documentation, smooth cargo handling, and excellent coordination from booking to delivery."
   },
   {
-    name: "Robert Martinez",
-    role: "Supply Chain Manager, Retail Solutions Corp",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=128&h=128&q=80",
-    text: "The customer service at Baal Krishna Shipping & Logistics is unmatched. When we faced critical delays due to unforeseen weather conditions, their team worked around the clock to find alternative routes and saved our product launch."
+    name: "Neha Shah",
+    role: "Supply Chain Manager",
+    text: "Baal Krishna Logistics has consistently delivered on its commitments. Their proactive communication, on-time deliveries, and professional approach have made them a trusted logistics partner for our business."
   },
   {
-    name: "Sarah Johnson",
-    role: "COO, GreenEarth Products",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=128&h=128&q=80",
-    text: "As a sustainable products company, Baal Krishna Shipping & Logistics's carbon-neutral shipping options aligned perfectly with our values. Their commitment to environmental responsibility and operational excellence makes them our partner of choice."
+    name: "Amit Verma",
+    role: "Operations Head",
+    text: "From customs clearance to transportation, every shipment is handled efficiently and professionally. Their experienced team understands our requirements and provides dependable logistics solutions every time."
   }
 ];
 
@@ -81,13 +99,13 @@ const Testimonials = () => {
                 <div key={index} className="min-w-full px-4">
                   <div className="bg-white p-8 rounded-xl shadow-lg">
                     <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                      {/* <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
                         <img 
                           src={testimonial.image}
                           alt={testimonial.name} 
                           className="w-full h-full object-cover"
                         />
-                      </div>
+                      </div> */}
                       <div>
                         <h4 className="text-lg font-bold text-[#0f2549]">{testimonial.name}</h4>
                         <p className="text-gray-500">{testimonial.role}</p>

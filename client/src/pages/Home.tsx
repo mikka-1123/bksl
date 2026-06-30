@@ -62,10 +62,10 @@ export default function Home() {
         <GlobalPresence />
         <AboutUs />
         <OurVision />
-        <OurLegendary />
-        <Timeline />
+        {/* <OurLegendary /> */}
+        {/* <Timeline /> */}
         <Testimonials />
-        <ClientLogos />
+        {/* <ClientLogos /> */}
         <GoldDirection />
         <ContactUs />
       </main>
