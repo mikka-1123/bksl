@@ -8,7 +8,13 @@ const root = document.getElementById("root");
 
 if (root) {
   createRoot(root).render(
-    <GoogleReCaptchaProvider reCaptchaKey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}>
+    // <GoogleReCaptchaProvider reCaptchaKey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}>
+    //   <FormProvider>
+    //     <App />
+    //   </FormProvider>
+    // </GoogleReCaptchaProvider>
+
+    <GoogleReCaptchaProvider reCaptchaKey="6LcaiiIrAAAAAA1TsvclVJSQ6HxClhJ9-OxGRzRa">
       <FormProvider>
         <App />
       </FormProvider>

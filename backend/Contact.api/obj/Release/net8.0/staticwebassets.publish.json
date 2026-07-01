@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "H7FP6bANsNY/hzzQN/668EUPagtN0hrPd4Fh6pPPXhs=",
-  "Source": "Contact.api",
-  "BasePath": "_content/Contact.api",
-  "Mode": "Default",
-  "ManifestType": "Publish",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"f+IunDL/OTG9iYgosnkVkwtjmEiSlQaWU874uCNkb44=","Source":"Contact.api","BasePath":"/","Mode":"Root","ManifestType":"Publish","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

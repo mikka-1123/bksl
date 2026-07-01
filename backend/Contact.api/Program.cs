@@ -30,8 +30,9 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(
                 "http://localhost:3000",  // Default React port (CRA)
-                "http://localhost:5173"   // Default Vite port
-            )
+                "http://localhost:5173",   // Default Vite port
+                "https://bklogiship.com"
+                )
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();

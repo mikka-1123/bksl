@@ -13,7 +13,10 @@ export async function apiRequest(
   data?: unknown | undefined,
 ): Promise<Response> {
 
-  const url = `${import.meta.env.VITE_API_BASE_URL}${endpoint}`;
+  // const url = `${import.meta.env.VITE_API_BASE_URL}${endpoint}`;
+
+  // const url = `https://localhost:7232/api/Contact`;
+  const url = `https://api.bklogiship.com/api/Contact`;
 
   const res = await fetch(url, {
     method,

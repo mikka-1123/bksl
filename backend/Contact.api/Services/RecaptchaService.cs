@@ -1,7 +1,7 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
-using Contact.api.Models;
+﻿using Contact.api.Models;
 using Microsoft.Extensions.Options;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Contact.api.Services
 {
@@ -23,10 +23,16 @@ namespace Contact.api.Services
 
             try
             {
-                // Changed to POST request (recommended by Google)
+                // Send credentials in POST body, not URL
+                var content = new FormUrlEncodedContent(new Dictionary<string, string>
+                {
+                    { "secret", _settings.SecretKey },
+                    { "response", token }
+                });
+
                 var response = await _httpClient.PostAsync(
-                    $"https://www.google.com/recaptcha/api/siteverify?secret={_settings.SecretKey}&response={token}",
-                    null);
+                    "https://www.google.com/recaptcha/api/siteverify",
+                    content);
 
                 if (!response.IsSuccessStatusCode)
                     return false;

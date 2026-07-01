@@ -1,8 +1,8 @@
-﻿using MailKit.Net.Smtp;
+﻿using Contact.api.Models;
+using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.Extensions.Options;
 using MimeKit;
-using Contact.api.Models;
 using System.Net;
 
 namespace Contact.api.Services
@@ -113,10 +113,16 @@ namespace Contact.api.Services
             {
                 using var client = new SmtpClient();
 
+                SecureSocketOptions options =
+                _emailSettings.SmtpPort == 465
+                    ? SecureSocketOptions.SslOnConnect
+                    : SecureSocketOptions.StartTls;
+
+
                 await client.ConnectAsync(
                     _emailSettings.SmtpServer,
                     _emailSettings.SmtpPort,
-                    _emailSettings.EnableSsl ? SecureSocketOptions.StartTls : SecureSocketOptions.None);
+                    options);
 
                 if (!string.IsNullOrEmpty(_emailSettings.SmtpUsername) && !string.IsNullOrEmpty(_emailSettings.SmtpPassword))
                 {
