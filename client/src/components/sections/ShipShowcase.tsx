@@ -8,10 +8,10 @@ const ShipShowcase = () => {
     visible: (i: number) => ({
       opacity: 1,
       y: 0,
-      transition: {
-        delay: 0.1 * i + 0.8, // Start animations after the ship appears
-        duration: 0.5
-      }
+      // transition: {
+      //   delay: 0.1 * i + 0.8, // Start animations after the ship appears
+      //   duration: 0.5
+      // }
     })
   };
 

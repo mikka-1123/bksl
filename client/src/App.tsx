@@ -7,6 +7,7 @@ import Home from "@/pages/Home";
 import { AnimatePresence } from "framer-motion";
 import { FormProvider } from "@/context/FormContext";
 import WhatsAppSupport from "@/components/WhatsAppSupport";
+import { lazy, Suspense } from "react";
 
 function Router() {
   return (

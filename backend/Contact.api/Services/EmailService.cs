@@ -64,6 +64,32 @@ namespace Contact.api.Services
                 "
                 };
 
+                //var builder = new BodyBuilder
+                //{
+                //    TextBody = $"""
+                //        New Contact Form Submission
+
+                //        Name: {request.Name}
+                //        Email: {request.Email}
+                //        Subject: {request.Subject}
+
+                //        Message:
+                //        {request.Message}
+                //        """,
+
+                //    HtmlBody = $"""
+                //        <h2>New Contact Form Submission</h2>
+
+                //        <p><strong>Name:</strong> {request.Name}</p>
+                //        <p><strong>Email:</strong> {request.Email}</p>
+                //        <p><strong>Subject:</strong> {request.Subject}</p>
+
+                //        <p><strong>Message:</strong></p>
+
+                //        <p>{request.Message}</p>
+                //        """
+                //};
+
                 message.Body = builder.ToMessageBody();
 
                 return await SendEmailAsync(message);

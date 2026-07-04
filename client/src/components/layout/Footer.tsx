@@ -1,88 +1,193 @@
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-import logo from '../../assets/logo.png';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "../../assets/logo.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0f2549] text-white pt-16 pb-8">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
-          <div>
-            <div className="flex flex-col items-center justify-center">
-              <div className="relative flex items-center justify-center mb-4">
-                <span className="absolute w-44 h-44 rounded-full bg-gradient-to-br from-blue-400/30 via-blue-700/20 to-transparent blur-2xl z-0"></span>
-                <img 
-                  src={logo} 
-                  alt="Baal Krishna Shipping & Logistics Logo" 
-                  className="w-32 h-32 object-contain rounded-full bg-white border-4 border-blue-100 shadow-xl z-10 transition-transform duration-300 hover:scale-105" 
-                />
-              </div>
-              <div className="text-center mb-6">
-                <span className="block text-white font-extrabold text-2xl tracking-wide drop-shadow-lg">BAAL KRISHNA</span>
-                <span className="block text-blue-200 font-semibold text-md tracking-widest">SHIPPING & LOGISTICS</span>
-              </div>
+    <footer className="bg-[#0f2549] text-white py-14 md:py-16">
+      <div className="container mx-auto px-6">
+
+        {/* Main Footer */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-12">
+
+          {/* ================= LOGO ================= */}
+          <div className="xl:col-span-5 flex flex-col items-center md:items-start text-center md:text-left">
+
+            <div className="relative mb-5">
+              <span className="absolute inset-0 rounded-full bg-blue-400/20 blur-3xl"></span>
+
+              <img
+                src={logo}
+                alt="Baal Krishna Shipping & Logistics"
+                className="relative w-24 h-24 md:w-28 md:h-28 rounded-full bg-white border-4 border-blue-100 shadow-xl"
+              />
             </div>
-            <p className="text-gray-300 mb-6">
-              Transforming global logistics through innovation, reliability, and exceptional service for over 30 years.
+
+            <h2 className="text-3xl font-extrabold tracking-wide">
+              BAAL KRISHNA
+            </h2>
+
+            <p className="text-blue-200 tracking-[3px] font-semibold mt-1">
+              SHIPPING & LOGISTICS
             </p>
-            <div className="flex space-x-5">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Facebook">
-                <FaFacebook size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Twitter">
-                <FaTwitter size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="LinkedIn">
-                <FaLinkedin size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Instagram">
-                <FaInstagram size={20} />
-              </a>
-            </div>
+
+            <p className="text-gray-300 mt-6 max-w-sm leading-7">
+              Transforming global logistics through innovation, reliability,
+              and exceptional service for over 30 years.
+            </p>
           </div>
-          
-          <div className="lg:col-start-2 lg:items-center lg:justify-center flex flex-col lg:text-center">
-            <h4 className="text-lg font-bold mb-6">Quick Links</h4>
-            <ul className="space-y-3">
-              <li><a href="#about-us" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-              {/* <li><a href="#why-choose-us" className="text-gray-300 hover:text-white transition-colors">Services</a></li> */}
-              <li><a href="#our-services" className="text-gray-300 hover:text-white transition-colors">Our Services</a></li>
-              <li><a href="#timeline" className="text-gray-300 hover:text-white transition-colors">Our Journey</a></li>
-              <li><a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+
+          {/* ================= QUICK LINKS ================= */}
+
+          <div className="xl:col-span-3 flex flex-col items-center md:items-start">
+
+            <h4 className="relative inline-block text-xl font-bold mb-8">
+              Quick Links
+              <span className="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 -bottom-2 w-20 h-0.5 bg-blue-400 rounded-full"></span>
+            </h4>
+
+            <ul className="space-y-4 text-center md:text-left">
+
+              <li>
+                <a
+                  href="#about-us"
+                  className="text-gray-300 hover:text-white transition"
+                >
+                  About Us
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#our-services"
+                  className="text-gray-300 hover:text-white transition"
+                >
+                  Our Services
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#timeline"
+                  className="text-gray-300 hover:text-white transition"
+                >
+                  Our Journey
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#testimonials"
+                  className="text-gray-300 hover:text-white transition"
+                >
+                  Testimonials
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#contact"
+                  className="text-gray-300 hover:text-white transition"
+                >
+                  Contact
+                </a>
+              </li>
+
             </ul>
+
           </div>
-          
-          <div>
-            <h4 className="text-lg font-bold mb-6">Newsletter</h4>
-            <p className="text-gray-300 mb-4">Subscribe for industry updates and exclusive offers.</p>
-            
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-3">
-              <div>
-                <input 
-                  type="email" 
-                  placeholder="Your email address" 
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 text-white border border-white/20 focus:outline-none focus:border-white/40 transition-colors"
-                  required
+
+          {/* ================= CONTACT ================= */}
+
+          <div className="xl:col-span-4 flex flex-col items-center md:items-start">
+
+            <h4 className="relative inline-block text-xl font-bold mb-8">
+              Get In Touch
+
+              <span className="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 -bottom-2 w-20 h-0.5 bg-blue-400 rounded-full"></span>
+
+            </h4>
+
+            <ul className="space-y-5 w-full">
+
+              <li className="flex justify-center md:justify-start items-start gap-3 text-gray-300">
+
+                <MapPin
+                  size={20}
+                  className="text-blue-300 mt-1 shrink-0"
                 />
-              </div>
-              <button 
-                type="submit" 
-                className="w-full px-4 py-3 bg-white text-[#0f2549] font-medium rounded-lg hover:bg-white/90 transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
+
+                <span>
+                  347P+RM7, Sector 8, Gandhidham, Gujarat
+                </span>
+
+              </li>
+
+              <li className="flex justify-center md:justify-start items-center gap-3 text-gray-300">
+
+                <Phone
+                  size={20}
+                  className="text-blue-300 shrink-0"
+                />
+
+                <span>+91 8980753743</span>
+
+              </li>
+
+              <li className="flex justify-center md:justify-start items-center gap-3 text-gray-300">
+
+                <Mail
+                  size={20}
+                  className="text-blue-300 shrink-0"
+                />
+
+                <a
+                  href="mailto:contact@bklogiship.com"
+                  className="hover:text-white transition"
+                >
+                  contact@bklogiship.com
+                </a>
+
+              </li>
+
+            </ul>
+
           </div>
+
         </div>
-        
-        <div className="pt-8 border-t border-white/10 text-center">
-          <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} Baal Krishna Shipping & Logistics. All rights reserved. | 
-            <a href="#" className="hover:text-white"> Privacy Policy</a> | 
-            <a href="#" className="hover:text-white"> Terms of Service</a>
-          </p>
+
+        {/* Bottom */}
+
+        <div className="mt-14 pt-6 border-t border-white/10">
+
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+
+            <p className="text-center md:text-left">
+              © {new Date().getFullYear()} Baal Krishna Shipping &
+              Logistics. All rights reserved.
+            </p>
+
+            <div className="flex gap-6">
+
+              <a
+                href="#"
+                className="hover:text-white transition"
+              >
+                Privacy Policy
+              </a>
+
+              <a
+                href="#"
+                className="hover:text-white transition"
+              >
+                Terms of Service
+              </a>
+
+            </div>
+
+          </div>
+
         </div>
+
       </div>
     </footer>
   );

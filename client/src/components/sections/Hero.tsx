@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef, useEffect } from 'react';
 import { ArrowRight, Anchor, MapPin } from 'lucide-react';
+import heroImage from "../../assets/herosection.webp";
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -206,8 +207,14 @@ const Hero = () => {
               
             {/* Main image with bow-shaped mask and neumorphic shadow */}
             <div className="relative z-10 overflow-hidden rounded-[24px_24px_60px_24px] shadow-[10px_10px_30px_rgba(0,0,0,0.1),-10px_-10px_30px_rgba(255,255,255,0.8)]">
-              <img 
+              {/* <img 
                 src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=85"
+                alt="Modern Container Ship with Advanced Technology" 
+                className="w-full object-cover transform hover:scale-105 transition-transform duration-1000"
+              /> */}
+
+              <img 
+                src={heroImage} 
                 alt="Modern Container Ship with Advanced Technology" 
                 className="w-full object-cover transform hover:scale-105 transition-transform duration-1000"
               />

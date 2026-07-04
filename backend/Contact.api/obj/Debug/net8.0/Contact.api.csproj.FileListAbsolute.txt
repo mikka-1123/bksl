@@ -88,7 +88,9 @@ D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\S
 D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Debug\net8.0\DotNetEnv.dll
 D:\Project\2025\Krishna_Logistics\PlayGround\Replit\V3_with_logo\Playground\V5\ShippingLogistics\backend\Contact.api\bin\Debug\net8.0\Sprache.dll
 D:\Projects\BKSL\bksl\backend\Contact.api\bin\Debug\net8.0\appsettings.Development.json
+D:\Projects\BKSL\bksl\backend\Contact.api\bin\Debug\net8.0\appsettings.json
 D:\Projects\BKSL\bksl\backend\Contact.api\bin\Debug\net8.0\appsettings.Production.json
+D:\Projects\BKSL\bksl\backend\Contact.api\bin\Debug\net8.0\Data\disposable_domains.json
 D:\Projects\BKSL\bksl\backend\Contact.api\bin\Debug\net8.0\Contact.api.staticwebassets.endpoints.json
 D:\Projects\BKSL\bksl\backend\Contact.api\bin\Debug\net8.0\Contact.api.exe
 D:\Projects\BKSL\bksl\backend\Contact.api\bin\Debug\net8.0\Contact.api.deps.json
@@ -133,4 +135,3 @@ D:\Projects\BKSL\bksl\backend\Contact.api\obj\Debug\net8.0\refint\Contact.api.dl
 D:\Projects\BKSL\bksl\backend\Contact.api\obj\Debug\net8.0\Contact.api.pdb
 D:\Projects\BKSL\bksl\backend\Contact.api\obj\Debug\net8.0\Contact.api.genruntimeconfig.cache
 D:\Projects\BKSL\bksl\backend\Contact.api\obj\Debug\net8.0\ref\Contact.api.dll
-D:\Projects\BKSL\bksl\backend\Contact.api\bin\Debug\net8.0\appsettings.json

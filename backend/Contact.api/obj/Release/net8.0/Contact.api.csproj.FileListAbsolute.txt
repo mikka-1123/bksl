@@ -87,3 +87,4 @@ D:\Projects\BKSL\bksl\backend\Contact.api\obj\Release\net8.0\Contact.api.pdb
 D:\Projects\BKSL\bksl\backend\Contact.api\obj\Release\net8.0\Contact.api.genruntimeconfig.cache
 D:\Projects\BKSL\bksl\backend\Contact.api\obj\Release\net8.0\ref\Contact.api.dll
 D:\Projects\BKSL\bksl\backend\Contact.api\bin\Release\net8.0\appsettings.json
+D:\Projects\BKSL\bksl\backend\Contact.api\bin\Release\net8.0\Data\disposable_domains.json
